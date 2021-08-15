@@ -1,0 +1,108 @@
+.hidden {
+  display: none;
+}
+
+img {
+  position: fixed;
+  z-index: -99;
+  top: 0;
+  left: 0;
+}
+
+body {
+  color: white;
+  font-family: "Jua", sans-serif;
+}
+p {
+  font-size: 0.5em;
+  font-weight: bold;
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+  font-size: 7em;
+  margin-top: 200px;
+}
+
+form {
+  text-align: center;
+}
+input[type="text"] {
+  font-family: "Jua", sans-serif;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+input:focus {
+  outline: none;
+}
+
+#todo-form {
+  margin-top: 20px;
+}
+#todo-form input {
+  width: 25%;
+  font-size: 1.5em;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+#quotes {
+  width: 100%;
+  font-family: "Nanum Pen Script", cursive;
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+
+#quotes span {
+  display: block;
+  font-size: 1.5em;
+  margin: 5px;
+  animation: fadeinout 10s infinite;
+}
+
+#quotes span:last-child {
+  font-size: 1em;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
